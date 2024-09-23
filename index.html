@@ -28,6 +28,9 @@
       rel="stylesheet"
     />
 
+    <!-- html  page add  -->
+
+
     <!-- Custom css  -->
     <script>
       tailwind.config = {
@@ -51,7 +54,7 @@
   </head>
   <body class="font-lexend">
     <header class="bg-primaryBg sticky top-0 w-full">
-      <!-- navbar section star  -->
+      <!-- navbar section start  -->
 
       <section class="md:container md:mx-auto">
         <nav class="w-11/12 mx-auto pt-3 pb-10">
@@ -61,7 +64,7 @@
                 <button
                   class="btn btn-lg text-xl font-semibold bg-primaryBtnColor hover:hoverColor"
                 >
-                  Blog
+                  <a href="blog.html">Blog</a>
                 </button>
               </div>
             </div>
@@ -123,10 +126,10 @@
                         
                         <button class="btn btn-lg text-xl font-normal text-primaryTextColor" id="btn-increase-coin">
                             <img src="assets/coin.png" alt="">
-                            0 BDT</button>
+                            10104 BDT</button>
                     </div>
                    
-                    <h1 class="text-2xl font-bold text-primaryHeadingColor">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <h1 class="text-2xl font-bold text-primaryHeadingColor" id="donate-title">Donate for Flood at Noakhali, Bangladesh</h1>
 
                     <p class="text-xl font-light text-primaryTextColor">
                         The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
@@ -136,7 +139,31 @@
                     <input type="text" id="input-field-amount" placeholder="Write Donation Amount" class="input input-bordered w-full " />
 
                     <!-- btn donate  -->
-                    <button class="btn btn-primary border-none bg-primaryBtnColor hover:bg-hoverColor text-xl font-semibold text-primaryHeadingColor w-full" id="btn-donate-now">Donate Now</button>
+                    <button onclick="openPopup()" class="btn btn-primary border-none bg-primaryBtnColor hover:bg-hoverColor text-xl font-semibold text-primaryHeadingColor translate-x-0.5 w-full" id="btn-donate-now">Donate Now</button>
+
+                    <!-- modal  -->
+
+                    <section class="hidden">
+
+                        <section  id="popup" class=" flex justify-center items-center mt-10">
+                            <div class="flex flex-col justify-center border-2 border-solid bg-white p-16 space-y-4 ">
+                                <h1 class="text-4xl font-extrabold text-primaryHeadingColor ">Congratulations!!!!</h1>
+                                <div class="flex mx-auto">
+                                    <img src="assets/coin.png" alt="">
+                                </div>
+                                
+                                <p class="text-primaryTextColor font-semibold text-2xl">You Have Donated for HumanKind</p>
+                                <h3 class="flex mx-auto text-4xl font-extrabold text-primaryHeadingColor">Successfully</h3>
+                                <button class="btn btn-xs text-xl font-semibold text-primaryTextColor sm:btn-sm md:btn-md lg:btn-lg">
+                                    close confirmation
+                                  </button>
+                            </div>
+                    
+                        </section>
+
+                    </section>
+
+
                   </div>
                 </div>
               </div>
@@ -157,7 +184,7 @@
 
                     <div class="flex items-center">
                         
-                        <button class="btn btn-lg text-xl font-normal text-primaryTextColor" id="btn-increase-coin">
+                        <button class="btn btn-lg text-xl font-normal text-primaryTextColor" id="btn-increase-coin2">
                             <img src="assets/coin.png" alt="">
                             600 BDT</button>
                     </div>
@@ -169,10 +196,10 @@
                     </p>
 
                     <!-- input text field  -->
-                    <input type="text" id="input-field-amount" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+                    <input type="text" id="input-field-amount2" placeholder="Write Donation Amount" class="input input-bordered w-full " />
 
                     <!-- btn donate  -->
-                    <button class="btn btn-primary border-none bg-primaryBtnColor hover:bg-hoverColor text-xl font-semibold text-primaryHeadingColor w-full" id="btn-donate-now">Donate Now</button>
+                    <button class="btn btn-primary border-none bg-primaryBtnColor hover:bg-hoverColor text-xl font-semibold text-primaryHeadingColor w-full" id="btn-donate-now2">Donate Now</button>
                   </div>
                 </div>
               </div>
@@ -193,7 +220,7 @@
 
                     <div class="flex items-center">
                         
-                        <button class="btn btn-lg text-xl font-normal text-primaryTextColor" id="btn-increase-coin">
+                        <button class="btn btn-lg text-xl font-normal text-primaryTextColor" id="btn-increase-coin3">
                             <img src="assets/coin.png" alt="">
                             2400 BDT</button>
                     </div>
@@ -205,10 +232,10 @@
                     </p>
 
                     <!-- input text field  -->
-                    <input type="text" id="input-field-amount" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+                    <input type="text" id="input-field-amount3" placeholder="Write Donation Amount" class="input input-bordered w-full " />
 
                     <!-- btn donate  -->
-                    <button class="btn btn-primary border-none bg-primaryBtnColor hover:bg-hoverColor text-xl font-semibold text-primaryHeadingColor w-full" id="btn-donate-now">Donate Now</button>
+                    <button class="btn btn-primary border-none bg-primaryBtnColor hover:bg-hoverColor text-xl font-semibold text-primaryHeadingColor w-full" id="btn-donate-now3">Donate Now</button>
                   </div>
                 </div>
               </div>
@@ -229,9 +256,9 @@
 
                     <div class="flex items-center">
                         
-                        <button class="btn btn-lg text-xl font-normal text-primaryTextColor" id="btn-increase-coin">
+                        <button class="btn btn-lg text-xl font-normal text-primaryTextColor" id="btn-increase-coin4">
                             <img src="assets/coin.png" alt="">
-                            0 BDT</button>
+                            3000 BDT</button>
                     </div>
                    
                     <h1 class="text-2xl font-bold text-primaryHeadingColor">Donate for Flood at Noakhali, Bangladesh</h1>
@@ -241,10 +268,10 @@
                     </p>
 
                     <!-- input text field  -->
-                    <input type="text" id="input-field-amount" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+                    <input type="text" id="input-field-amount4" placeholder="Write Donation Amount" class="input input-bordered w-full " />
 
                     <!-- btn donate  -->
-                    <button class="btn btn-primary border-none bg-primaryBtnColor hover:bg-hoverColor text-xl font-semibold text-primaryHeadingColor w-full" id="btn-donate-now">Donate Now</button>
+                    <button class="btn btn-primary border-none bg-primaryBtnColor hover:bg-hoverColor text-xl font-semibold text-primaryHeadingColor w-full" id="btn-donate-now4">Donate Now</button>
                   </div>
                 </div>
               </div>
@@ -265,9 +292,9 @@
 
                     <div class="flex items-center">
                         
-                        <button class="btn btn-lg text-xl font-normal text-primaryTextColor" id="btn-increase-coin">
+                        <button class="btn btn-lg text-xl font-normal text-primaryTextColor" id="btn-increase-coin5">
                             <img src="assets/coin.png" alt="">
-                            600 BDT</button>
+                            6000 BDT</button>
                     </div>
                    
                     <h1 class="text-2xl font-bold text-primaryHeadingColor">Donate for Flood Relief in Feni,Bangladesh</h1>
@@ -277,10 +304,10 @@
                     </p>
 
                     <!-- input text field  -->
-                    <input type="text" id="input-field-amount" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+                    <input type="text" id="input-field-amount5" placeholder="Write Donation Amount" class="input input-bordered w-full " />
 
                     <!-- btn donate  -->
-                    <button class="btn btn-primary border-none bg-primaryBtnColor hover:bg-hoverColor text-xl font-semibold text-primaryHeadingColor w-full" id="btn-donate-now">Donate Now</button>
+                    <button class="btn btn-primary border-none bg-primaryBtnColor hover:bg-hoverColor text-xl font-semibold text-primaryHeadingColor w-full" id="btn-donate-now5">Donate Now</button>
                   </div>
                 </div>
               </div>
@@ -301,9 +328,9 @@
 
                     <div class="flex items-center">
                         
-                        <button class="btn btn-lg text-xl font-normal text-primaryTextColor" id="btn-increase-coin">
+                        <button class="btn btn-lg text-xl font-normal text-primaryTextColor" id="btn-increase-coin6">
                             <img src="assets/coin.png" alt="">
-                            2400 BDT</button>
+                            4000 BDT</button>
                     </div>
                    
                     <h1 class="text-2xl font-bold text-primaryHeadingColor">Aid for Injured in the Quota Movement</h1>
@@ -313,10 +340,10 @@
                     </p>
 
                     <!-- input text field  -->
-                    <input type="text" id="input-field-amount" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+                    <input type="text" id="input-field-amount6" placeholder="Write Donation Amount" class="input input-bordered w-full " />
 
                     <!-- btn donate  -->
-                    <button class="btn btn-primary border-none bg-primaryBtnColor hover:bg-hoverColor text-xl font-semibold text-primaryHeadingColor w-full" id="btn-donate-now">Donate Now</button>
+                    <button class="btn btn-primary border-none bg-primaryBtnColor hover:bg-hoverColor text-xl font-semibold text-primaryHeadingColor w-full" id="btn-donate-now6">Donate Now</button>
                   </div>
                 </div>
               </div>
@@ -327,5 +354,11 @@
       <!-- feature section end   -->
     </main>
     <!-- main section end  -->
+
+   <!-- js file added  -->
+    <script src="js/utilities.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/pageAdd.js"></script>
+    <script src="js/donate.js"></script>
   </body>
 </html>
