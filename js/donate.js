@@ -1,6 +1,7 @@
 
 // 1
-document.getElementById('btn-donate-now').addEventListener('click',function(){
+document.getElementById('btn-donate-now').addEventListener('click',function(event){
+    event.preventDefault();
 
     const inputFieldAmount=getInputFiledAmountById('input-field-amount'); 
     // console.log(inputFieldAmount);
@@ -38,7 +39,7 @@ document.getElementById('btn-donate-now').addEventListener('click',function(){
         div.className=' border-2 border-solid border-gray-300 rounded-lg p-8 mx-20 my-6';
         div.innerHTML=`
         <h3 class="text-2xl font-bold">${inputFieldAmount}tk is donated to ${donateTitle}</h3>
-        <p class="font-semibold text-xl px-10 py-4">Date: ${dateValue} at Time: ${timeValue} </p>
+        <p class="font-semibold text-xl py-4">Date: ${dateValue} at Time: ${timeValue} </p>
 
         `;
         document.getElementById('history-section').appendChild(div);
@@ -99,7 +100,8 @@ document.getElementById('btn-donate-now').addEventListener('click',function(){
 
 // ----------------2-----------
 
-document.getElementById('btn-donate-now2').addEventListener('click',function(){
+document.getElementById('btn-donate-now2').addEventListener('click',function(event){
+    event.preventDefault();
 
     const inputFieldAmount2=getInputFiledAmountById('input-field-amount2'); 
     // console.log(inputFieldAmount);
@@ -134,7 +136,7 @@ document.getElementById('btn-donate-now2').addEventListener('click',function(){
         div.className=' border-2 border-solid border-gray-300 rounded-lg p-8 mx-20 my-6';
         div.innerHTML=`
         <h3 class="text-2xl font-bold">${inputFieldAmount2}tk is donated to ${donateTitle2}</h3>
-        <p class="font-semibold text-xl px-10 py-4">Date: ${dateValue} at Time: ${timeValue} </p>
+        <p class="font-semibold text-xl py-4">Date: ${dateValue} at Time: ${timeValue} </p>
 
         `;
         document.getElementById('history-section').appendChild(div);
@@ -150,7 +152,8 @@ document.getElementById('btn-donate-now2').addEventListener('click',function(){
 
 // --------------3-------------
 
-document.getElementById('btn-donate-now3').addEventListener('click',function(){
+document.getElementById('btn-donate-now3').addEventListener('click',function(event){
+    event.preventDefault();
 
 
     const inputFieldAmount3=getInputFiledAmountById('input-field-amount3'); 
@@ -186,7 +189,7 @@ document.getElementById('btn-donate-now3').addEventListener('click',function(){
         div.className=' border-2 border-solid border-gray-300 rounded-lg p-8 mx-20 my-6';
         div.innerHTML=`
         <h3 class="text-2xl font-bold">${inputFieldAmount3}tk is donated to ${donateTitle3}</h3>
-        <p class="font-semibold text-xl px-10 py-4">Date: ${dateValue} at Time: ${timeValue} </p>
+        <p class="font-semibold text-xl py-4">Date: ${dateValue} at Time: ${timeValue} </p>
 
         `;
         document.getElementById('history-section').appendChild(div);
@@ -202,7 +205,8 @@ document.getElementById('btn-donate-now3').addEventListener('click',function(){
 
 // -------------4-----------------
 
-document.getElementById('btn-donate-now4').addEventListener('click',function(){
+document.getElementById('btn-donate-now4').addEventListener('click',function(event){
+    event.preventDefault();
 
 
     const inputFieldAmount4=getInputFiledAmountById('input-field-amount4'); 
@@ -238,7 +242,7 @@ document.getElementById('btn-donate-now4').addEventListener('click',function(){
         div.className=' border-2 border-solid border-gray-300 rounded-lg p-8 mx-20 my-6';
         div.innerHTML=`
         <h3 class="text-2xl font-bold">${inputFieldAmount4}tk is donated to ${donateTitle4}</h3>
-        <p class="font-semibold text-xl px-10 py-4">Date: ${dateValue} at Time: ${timeValue} </p>
+        <p class="font-semibold text-xl py-4">Date: ${dateValue} at Time: ${timeValue} </p>
 
         `;
         document.getElementById('history-section').appendChild(div);
@@ -254,7 +258,8 @@ document.getElementById('btn-donate-now4').addEventListener('click',function(){
 
 // -----------5--------
 
-document.getElementById('btn-donate-now5').addEventListener('click',function(){
+document.getElementById('btn-donate-now5').addEventListener('click',function(event){
+    event.preventDefault();
 
 
     const inputFieldAmount5=getInputFiledAmountById('input-field-amount5'); 
@@ -290,7 +295,7 @@ document.getElementById('btn-donate-now5').addEventListener('click',function(){
         div.className=' border-2 border-solid border-gray-300 rounded-lg p-8 mx-20 my-6';
         div.innerHTML=`
         <h3 class="text-2xl font-bold">${inputFieldAmount5}tk is donated to ${donateTitle5}</h3>
-        <p class="font-semibold text-xl px-10 py-4">Date: ${dateValue} at Time: ${timeValue} </p>
+        <p class="font-semibold text-xl py-4">Date: ${dateValue} at Time: ${timeValue} </p>
 
         `;
         document.getElementById('history-section').appendChild(div);
@@ -306,7 +311,8 @@ document.getElementById('btn-donate-now5').addEventListener('click',function(){
 
 // ---------6---------
 
-document.getElementById('btn-donate-now6').addEventListener('click',function(){
+document.getElementById('btn-donate-now6').addEventListener('click',function(event){
+    event.preventDefault();
 
 
     const inputFieldAmount6=getInputFiledAmountById('input-field-amount6'); 
@@ -342,7 +348,7 @@ document.getElementById('btn-donate-now6').addEventListener('click',function(){
         div.className=' border-2 border-solid border-gray-300 rounded-lg p-8 mx-20 my-6';
         div.innerHTML=`
         <h3 class="text-2xl font-bold">${inputFieldAmount6}tk is donated to ${donateTitle6}</h3>
-        <p class="font-semibold text-xl px-10 py-4">Date: ${dateValue} at Time: ${timeValue} </p>
+        <p class="font-semibold text-xl py-4">Date: ${dateValue} at Time: ${timeValue} </p>
 
         `;
         document.getElementById('history-section').appendChild(div);
@@ -355,6 +361,7 @@ document.getElementById('btn-donate-now6').addEventListener('click',function(){
     document.getElementById('btn-increase-coin6').innerText=addDonation;
     document.getElementById('amount-decrease').innerText=decreaseAmount;
 })
+
 
 
 

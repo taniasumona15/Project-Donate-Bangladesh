@@ -49,7 +49,7 @@
       </script>
 </head>
 <body>
-    <header class="bg-primaryBg sticky top-0 w-full">
+    <header class="bg-primaryBg">
         <!-- navbar section star  -->
   
         <section class="md:container md:mx-auto">
@@ -68,14 +68,14 @@
                 </div>
               </div>
               <div class="navbar-center gap-4">
-                <img src="assets/logo.png" alt="" />
+                <img class="hidden lg:block" src="assets/logo.png" alt="" />
                 <a class="text-xl font-semibold">Donate Bangladesh</a>
               </div>
               <div class="navbar-end gap-5">
                 <img src="assets/coin.png" alt="" />
   
                 <!-- amount decrease -->
-                <p class="text-xl font-medium" id="amount-decrease">5500 BDT</p>
+                <p class="text-base lg:text-xl font-medium" id="amount-decrease">5500 BDT</p>
               </div>
             </div>
           </nav>
@@ -90,19 +90,22 @@
                 <input type="radio" name="my-accordion-2"  />
                 <div class="collapse-title text-xl font-bold text-primaryHeadingColor">What is the Document Object Model(DOM)?</div>
                 <div class="collapse-content">
-                  <p class="text-xl font-bold text-primaryHeadingColor">DOM means Document object model. It represents the page so that program can modify the document structure, style and content.  The DOM represents the document as nodes and objects this is the way programming language can interact with the page.  </p>
+                  <p class="text-xl text-primaryHeadingColor">DOM means Document object model. It represents the page so that program can modify the document structure, style and content.  The DOM represents the document as nodes and objects this is the way programming language can interact with the page.  </p>
                 </div>
               </div>
               <div class="collapse collapse-arrow bg-base-200 p-4 rounded-none">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title text-xl font-bold text-primaryHeadingColor">How do you select an element From the DOM?</div>
                 <div class="collapse-content">
-                  <p class="text-xl font-bold text-primaryHeadingColor">There are 5way to select element from the document object model
-                    1.	Using getElementById.
-                    2.	Using getElementsByClassName.
-                    3.	Using getElementsByTagName.
-                    4.	Using querySelector.
-                    5.	Using querySelectorAll.
+                  <p class="text-xl text-primaryHeadingColor mb-4">There are 5way to select element from the document object model.
+                    <ul class="text-xl text-primaryHeadingColor space-y-2">
+                      <li>Using getElementById</li>
+                      <li>Using getElementsByClassName</li>
+                      <li>Using getElementsByTagName</li>
+                      <li>Using querySelector</li>
+                      <li>Using querySelectorAll</li>
+                    </ul>
+                 
                     </p>
                 </div>
               </div>
@@ -110,18 +113,21 @@
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title text-xl font-bold text-primaryHeadingColor ">What is event delegation in the context of the Dom, and why is it useful?</div>
                 <div class="collapse-content">
-                  <p class="text-xl font-bold text-primaryHeadingColor">Event delegation uses for event propagation(bubbling) to handle events higher level in the DOM .</p>
+                  <p class="text-xl text-primaryHeadingColor">Event delegation uses for event propagation(bubbling) to handle events higher level in the DOM .</p>
                 </div>
               </div>
               <div class="collapse collapse-arrow bg-base-200 p-4 rounded-none">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title text-xl font-bold text-primaryHeadingColor">How do you manipulate an elements attributes and styles using the DOM?</div>
                 <div class="collapse-content">
-                  <p class="text-xl font-bold text-primaryHeadingColor">We can use setAttribute() method to change attributes like id, href, or src . SetAttribute() method accepts two arguments.</p>
+                  <p class="text-xl text-primaryHeadingColor">We can use setAttribute() method to change attributes like id, href, or src . SetAttribute() method accepts two arguments.</p>
                 </div>
               </div>
         </section>
     </main>
+
+    <footer class="bg-primaryBg h-20 mt-8"></footer>
+
     <!-- js file added  -->
     <!-- <script src="js/pageAdd.js"></script> -->
     <script src="js/home.js"></script>
