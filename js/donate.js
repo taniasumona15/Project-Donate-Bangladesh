@@ -22,6 +22,7 @@ document.getElementById('btn-donate-now').addEventListener('click',function(even
     }
 
      const addDonation =inputFieldAmount+btnIncreaseCoin;
+     document.getElementById('my_modal_3').showModal();
     // console.log(addDonation);
 
     //modalDialog 
@@ -122,7 +123,9 @@ document.getElementById('btn-donate-now2').addEventListener('click',function(eve
     }
 
      const addDonation =inputFieldAmount2+btnIncreaseCoin2;
-    console.log(addDonation);
+     document.getElementById('my_modal_31').showModal();
+
+    // console.log(addDonation);
 
             //add to transaction history
         const donateTitle2=document.getElementById('donate-title2').innerText;
@@ -175,7 +178,8 @@ document.getElementById('btn-donate-now3').addEventListener('click',function(eve
     }
 
      const addDonation =inputFieldAmount3+btnIncreaseCoin3;
-    console.log(addDonation);
+     document.getElementById('my_modal_32').showModal();
+    // console.log(addDonation);
 
         //add to transaction history
         const donateTitle3=document.getElementById('donate-title3').innerText;
@@ -228,7 +232,8 @@ document.getElementById('btn-donate-now4').addEventListener('click',function(eve
     }
 
      const addDonation =inputFieldAmount4+btnIncreaseCoin4;
-    console.log(addDonation);
+     document.getElementById('my_modal_33').showModal();
+    // console.log(addDonation);
 
         //add to transaction history
         const donateTitle4=document.getElementById('donate-title4').innerText;
@@ -281,7 +286,8 @@ document.getElementById('btn-donate-now5').addEventListener('click',function(eve
     }
 
      const addDonation =inputFieldAmount5+btnIncreaseCoin5;
-    console.log(addDonation);
+     document.getElementById('my_modal_34').showModal();
+    // console.log(addDonation);
 
             //add to transaction history
         const donateTitle5=document.getElementById('donate-title5').innerText;
